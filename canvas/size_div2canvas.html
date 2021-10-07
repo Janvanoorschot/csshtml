@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML/CSS/Bootstrap</title>
+    <script type="text/javascript" src="/assets/jquery-2.2.0.min.js?compile=false" ></script>
+    <link rel="stylesheet" href="/assets/local/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootcanvas.css" />
+    <script type="text/javascript" src="/assets/local/bootstrap/dist/js/bootstrap.min.js" ></script>
+</head>
+<body>
+    <h1>HTML/CSS/Bootstrap with canvas demo</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <p>Left</p>
+            </div>
+            <div id="parent" class="col-lg-8">
+                <canvas id="somecanvas"></canvas>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    $(document ).ready(function() {
+        var con = $("#parent");
+        var canvas = $('#somecanvas')[0];
+        var aspect = canvas.height/canvas.width;
+        var width = con.width();
+        var height = con.height();
+        canvas.width = width;
+        canvas.height = Math.round(width*aspect);
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
+</script>
+
+</html>

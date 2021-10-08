@@ -1,3 +1,8 @@
+.maincomponent {
+    display:table;
+    border-style: dotted;
+}
+
 #somecanvas {
     /*width: 400pt;*/
     /*height: 300pt;*/

@@ -1,19 +1,21 @@
 .maincomponent {
-    display:table;
+    /*display:table;*/
     border-style: dotted;
+    height: 300pt;
+}
+
+.fieldviewer .left {
+    border-style: solid;
+    padding: 0;
+}
+
+.fieldviewer .right {
+    border-style: solid;
+    padding: 0;
 }
 
 #somecanvas {
-    /*width: 400pt;*/
-    /*height: 300pt;*/
+    /*height: 600pt;*/
+    padding: 0;
 }
 
-.col-lg-4 {
-    border-style: solid;
-    padding: 0%;
-}
-
-.col-lg-8 {
-    border-style: solid;
-    padding: 0%;
-}

@@ -1,7 +1,14 @@
+*{ border: 1px solid red; }
 .maincomponent {
     /*display:table;*/
     border-style: dotted;
     height: 300pt;
+    padding: 0;
+}
+.fieldviewer {
+    border-style: double;
+    padding: 0;
+
 }
 
 .fieldviewer .left {
@@ -15,7 +22,7 @@
 }
 
 #somecanvas {
-    /*height: 600pt;*/
+    /*height: 250pt;*/
     padding: 0;
 }
 

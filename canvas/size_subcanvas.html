@@ -18,7 +18,7 @@
                     <div class="col-lg-4 left">
                         <p>Left</p>
                     </div>
-                    <div id="parent" class="col-lg-8 right">
+                    <div class="col-lg-8 parent right">
                         <canvas id="somecanvas"></canvas>
                     </div>
                 </div>
@@ -29,21 +29,21 @@
 
 <script>
     $(document ).ready(function() {
-        var con = $("#parent");
+        var outer = $(".maincomponent");
+        var con = $(".parent");
         var canvas = $('#somecanvas')[0];
         var cwidth = canvas.width;
         var cheight = canvas.height;
         var aspect = canvas.height/canvas.width;
         var width = con.width();
-        var height = con.height();
-        console.log(`1: canvas: ${canvas.width}/${canvas.height}, con:${con.width()}/${con.height()}`)
+        var height = outer.height();
+        console.log(`1: canvas: ${cwidth}/${cheight}, con:${width}/${height}`)
         canvas.width = width;
         // canvas.height = Math.round(width*aspect);
         canvas.height = height;
         var ctx = canvas.getContext("2d");
         ctx.fillStyle = "blue";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        console.log(`2: canvas: ${canvas.width}/${canvas.height}, con:${con.width()}/${con.height()}`)
     });
 </script>
 

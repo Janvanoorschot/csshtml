@@ -1,7 +1,7 @@
 
 function resizecanvas_ready() {
     resize_canvas_paint();
-    $(window).resize(resizecanvas_resize);
+    // $(window).resize(resizecanvas_resize);
 }
 
 function resizecanvas_resize() {

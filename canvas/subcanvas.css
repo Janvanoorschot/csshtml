@@ -1,9 +1,7 @@
-*{ border: 1px solid red; }
+/**{ border: 1px solid red; }*/
 .maincomponent {
-    /*display:table;*/
     border-style: dotted;
-    height: 300pt;
-    padding: 0;
+    /*height: 300pt;*/
 }
 .fieldviewer {
     border-style: double;
@@ -12,17 +10,19 @@
 }
 
 .fieldviewer .left {
+    background: #66afe9;
     border-style: solid;
     padding: 0;
 }
 
 .fieldviewer .right {
+    background: #2b542c;
     border-style: solid;
     padding: 0;
 }
 
-#somecanvas {
-    /*height: 250pt;*/
-    padding: 0;
+canvas {
+    width: 100%;
+    object-fit: contain;
 }
 

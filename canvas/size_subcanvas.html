@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML/CSS/Bootstrap</title>
-    <script type="text/javascript" src="/assets/jquery-2.2.0.min.js?compile=false" ></script>
+
+    <script type="text/javascript" src="/assets/jquery-2.2.0.min.js" ></script>
     <link rel="stylesheet" href="/assets/local/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script type="text/javascript" src="subcanvas.js" ></script>
     <link rel="stylesheet" href="subcanvas.css" />
-    <script type="text/javascript" src="/assets/local/bootstrap/dist/js/bootstrap.min.js" ></script>
+
+    <!--    <script type="text/javascript" src="/assets/local/bootstrap/dist/js/bootstrap.min.js" ></script>-->
 </head>
 <body>
     <h1>Canvas as part of a layout</h1>
@@ -29,21 +33,7 @@
 
 <script>
     $(document ).ready(function() {
-        var outer = $(".maincomponent");
-        var con = $(".parent");
-        var canvas = $('#somecanvas')[0];
-        var cwidth = canvas.width;
-        var cheight = canvas.height;
-        var aspect = canvas.height/canvas.width;
-        var width = con.width();
-        var height = outer.height();
-        console.log(`1: canvas: ${cwidth}/${cheight}, con:${width}/${height}`)
-        canvas.width = width;
-        // canvas.height = Math.round(width*aspect);
-        canvas.height = height;
-        var ctx = canvas.getContext("2d");
-        ctx.fillStyle = "blue";
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        subcanvas_startup();
     });
 </script>
 

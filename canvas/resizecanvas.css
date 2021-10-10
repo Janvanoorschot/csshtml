@@ -1,0 +1,26 @@
+*{ border: 1px solid red; }
+
+#maincomponent {
+    /*height: 300pt;*/
+    /*height: 100%;*/
+}
+#fieldviewer {
+}
+
+#mycontainer {
+}
+
+#myrow {
+}
+
+#left {
+}
+
+#right {
+}
+
+#thecanvas {
+    background:rgba(255,255,0,0.3);
+    width: 100%;
+    height: auto;
+}

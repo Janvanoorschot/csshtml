@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML/CSS/Bootstrap</title>
+    <script type="text/javascript" src="/assets/jquery-2.2.0.min.js?compile=false" ></script>
+    <link rel="stylesheet" href="/assets/local/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resizecanvas.css" />
+    <script type="text/javascript" src="/assets/local/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="resizecanvas.js" ></script>
+</head>
+<body>
+    <h1>Canvas as part of a layout</h1>
+
+    <div id="maincomponent">
+        <div id="fieldviewer">
+            <div class="container" id="mycontainer">
+                <div class="row" id="myrow">
+                    <div class="col-md-2" id="left">
+                        <p>Left</p>
+                    </div>
+                    <div class="col-md-10 " id="right">
+                        <canvas id="thecanvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document ).ready(function() {
+        resizecanvas_ready();
+    });
+</script>
+
+</html>
